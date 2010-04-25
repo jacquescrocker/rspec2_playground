@@ -1,0 +1,16 @@
+Goal of this project is to play around with Rspec, and use all of its features.
+
+----
+spec/structure
+
+  sets up all the different combinations of rspec structures
+
+----
+spec/matchers
+
+  tries out all the rspec matchers
+
+----
+lib
+  
+  holds all the supporting files
