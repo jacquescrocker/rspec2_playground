@@ -21,18 +21,30 @@ describe "Rspec Basic Matchers" do
     # Ruby turns it into:
     # !(@some_number.should == 2)
   end
+  
+  it "has some operator matchers" do
+    @some_number = 5
+    @some_number.should == 5
+    @some_number.should >= 5
+    @some_number.should >= 5
+    @some_number.should <= 5
+    @some_number.should <= 10
+  end
+
+  it "has some operator matchers with be" do
+    @some_number = 5
+    @some_number.should be == 5
+    @some_number.should be >= 5
+    @some_number.should be >= 5
+    @some_number.should be <= 5
+    @some_number.should be <= 10
+  end
 
   it "has some string matchers" do
     @string = "something something something"
     @string.should match(/something/)
     @string.should =~ /something/
     @string.should include("something")
-  end
-
-  it "has some collection matchers" do
-    @team = ["Joe", "Jim", "Bob", "Tom", "Mike"]
-    @team.should have(5).players
-    @team.should include("Joe")
   end
 
   it "has a raise_error matcher" do
@@ -75,5 +87,9 @@ describe "Rspec Basic Matchers" do
 
   end
 
-
+  
+  it "has have([count]) specs" do
+    
+  end
+  
 end
