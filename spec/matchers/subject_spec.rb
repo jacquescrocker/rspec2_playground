@@ -21,7 +21,6 @@ describe "Rspec Implicit Subject" do
     specify { subject.should be_eligible_to_vote }
   end
   
-  
   describe Person, "(no fields)" do
     it { should_not be_eligible_to_vote }
   end
